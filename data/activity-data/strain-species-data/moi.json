@@ -1,0 +1,27 @@
+{
+  "gramplus": [
+    "Staphylococcus aureus"
+  ],
+  "gramminus": [
+    "Escherichia coli",
+    "Klebsiella pneumoniae",
+    "Acinetobacter baumannii",
+    "Pseudomonas aeruginosa"
+  ],
+  "species": [
+    "Escherichia coli",
+    "Staphylococcus aureus",
+    "Klebsiella pneumoniae",
+    "Acinetobacter baumannii",
+    "Pseudomonas aeruginosa"
+  ],
+  "strain": [
+    "Escherichia coli ATCC 25922",
+    "Staphylococcus aureus ATCC 25923",
+    "Klebsiella pneumoniae ATCC 700603",
+    "Acinetobacter baumannii ATCC 19606",
+    "Pseudomonas aeruginosa ATCC 27853",
+    "Staphylococcus aureus ATCC 43300",
+    "Staphylococcus aureus ATCC 33591"
+  ]
+}

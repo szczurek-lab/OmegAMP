@@ -1,0 +1,23 @@
+name: diffusion
+
+# Diffusion Algorithm Parameters
+
+beta_schedule: cosine
+timesteps: 1000
+time_embedding_dim: 10
+
+# Diffusion Model Parameters 
+
+hidden_dim: 32
+dim_mults: [1,2,4]
+self_condition: yes
+objective: pred_v
+rescaled_phi: 1
+noise_strength: 0.1
+tau1: 0.5
+tau2: 0.9
+loss_weighting: yes
+
+# Conditioning Parameters
+
+variable_conditioning: yes

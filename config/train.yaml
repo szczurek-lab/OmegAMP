@@ -1,0 +1,40 @@
+defaults:
+  - data: amp-embeddings
+  - task: diffusion-training
+  - hydra: default
+  # Allow the model to overwrite the settings below
+  - _self_
+  - model: diffusion
+
+seed: 80672983
+eval_testset: yes
+
+no_saved_samples: 50000
+sample_save_path: ${data.sample_save_path}
+
+wandb:
+  id: ~
+  entity: ~
+  project: amp-modelling
+  group: explore
+  mode: ~
+  name: ~
+
+hydra:
+  job:
+    name: ${wandb.group}
+
+trainer:
+  _target_: pytorch_lightning.Trainer
+  accelerator: gpu
+  devices: 1
+  max_epochs: 1390
+  log_every_n_steps: 10
+  check_val_every_n_epoch: 10
+  gradient_clip_val: 0.05
+  gradient_clip_algorithm: norm
+  num_sanity_val_steps: -1
+
+monitor: ${task.monitor}
+early_stopping: ~
+train_limit: 72h

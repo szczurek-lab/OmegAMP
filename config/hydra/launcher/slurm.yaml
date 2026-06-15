@@ -1,0 +1,15 @@
+defaults:
+  - submitit_slurm
+
+partition: gpu_all
+qos: students
+gres: gpu:1
+
+cpus_per_task: 4
+mem_gb: 32
+
+# 48 hours
+timeout_min: 2880
+
+# Do not requeue jobs
+max_num_timeout: 0

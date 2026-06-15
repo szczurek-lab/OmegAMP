@@ -1,0 +1,26 @@
+name: diffusion-training
+
+monitor: val/amp-probability
+
+# Optimizer Parameters
+
+optimizer: radam
+lr_decay: exp
+learning_rate: 1e-3
+min_learning_rate: 1e-5
+no_test_samples: 50000 
+batch_size: 512
+sample_batch_size: 2048
+
+# Encoder Model
+
+encoder_decoder: HydrophobicScaleWrapper
+aa_scales: ["wimley_white_with_min_spacing", "pI", "levitt", "transmembrane_propensity", "aasi"]
+
+# Esm-2 Pseudo-Perplexity
+
+evaluation_model_embedding_dim: 480
+
+# Classifier 
+
+classifier_model_path: models/broad-classifier.json

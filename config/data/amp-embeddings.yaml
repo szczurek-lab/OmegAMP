@@ -1,0 +1,8 @@
+name: amp-embeddings
+
+original_amp_file: data/generative-model-data/generative-model-dataset.csv
+embeddings_file: data/generative-model-data/generative-model-embeddings.h5
+computable_conditioning_names: ["length", "charge", "hydrophobicity_eisenberg"]
+uncomputable_conditioning_names: ["isAMP"]
+sample_save_path: results/generative-model-results/omegamp-generated-samples.fasta
+only_amps: no # OPTIONAL: change to yes
