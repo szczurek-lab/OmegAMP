@@ -40,14 +40,15 @@ streamlit run app.py
 If you use this project in your research, please cite:
 
 ```bibtex
-@misc{soares2025omegamptargetedampdiscovery,
-      title={OmegAMP: Targeted AMP Discovery through Biologically Informed Generation}, 
-      author={Diogo Soares and Leon Hetzel and Paulina Szymczak and Marcelo Der Torossian Torres and Johanna Sommer and Cesar de la Fuente-Nunez and Fabian Theis and Stephan Günnemann and Ewa Szczurek},
-      year={2025},
-      eprint={2504.17247},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2504.17247}, 
+@article{
+soares2026omegamp,
+title={Omeg{AMP}: Targeted {AMP} Discovery via Biologically Informed Generation},
+author={Diogo Soares and Leon Hetzel and Paulina Szymczak and Marcelo Der Torossian Torres and Johanna Sommer and Cesar de la Fuente-Nunez and Fabian J Theis and Stephan G{\"u}nnemann and Ewa Szczurek},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=hAq3XLZ9ex},
+note={}
 }
 ```
 
