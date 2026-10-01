@@ -19,7 +19,7 @@ dependencies = [
     # General science & ml
     "numpy",
     "scipy",
-    "scikit-learn",
+    "scikit-learn == 1.7",
     "pandas",
 
     # Plotting & visualization
@@ -47,7 +47,7 @@ dependencies = [
     "fair-esm==2.0.0",
     "transformers",
     "modlamp",
-    "xgboost",
+    "xgboost==2.0.3",
     "biopython",
     "peptides",
     "gdown",
